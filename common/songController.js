@@ -10,7 +10,7 @@ module.exports = class songController {
   
         if (song.length == 1 ){
             var fullSongName = song[0];
-            const songFullPath = `C:/Users/maria/Documents/ba-server/discord-bot/music/${fullSongName}`;
+            const songFullPath = `${__dirname}/../music/${fullSongName}`;
             this.startQueue(message, songFullPath, fullSongName);
 
         } else {
